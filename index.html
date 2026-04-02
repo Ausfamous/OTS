@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oceana Tree Services | Professional Arborist | Tree Care & Maintenance</title>
+    <meta name="description" content="Expert tree services including pruning, removal, health assessments, and stump grinding. Professional arborists serving your community with care and integrity.">
+    <meta name="theme-color" content="#1a1f2e">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Sticky Header -->
+    <header class="header" role="banner">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-text">Oceana Tree Services</span>
+            </div>
+            
+            <nav class="nav" role="navigation" aria-label="Main navigation">
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#why-us">Why Us</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="contact.html" class="nav-cta">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-phone">
+                <span class="phone-icon">📞</span>
+                <span class="phone-number">(555) 123-4567</span>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero" role="region" aria-label="Hero section">
+            <div class="hero-content">
+                <h1 class="hero-headline">Professional Tree Care for Your Property</h1>
+                <p class="hero-subtext">Expert arborists delivering safe, sustainable tree services with meticulous attention to your landscape's health and beauty.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" id="quoteFormToggle">Get Free Quote</button>
+                    <a href="tel:(555) 123-4567" class="btn btn-secondary">Call Now</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="/images/hero.jpg" alt="Professional tree care services in action" loading="lazy">
+            </div>
+        </section>
+
+        <!-- Quick Quote Form -->
+        <section class="quote-form-section" id="quoteForm" role="region" aria-label="Quick quote request">
+            <div class="quote-form-container">
+                <h2>Get Your Free Quote</h2>
+                <p>Fill out the form below and we'll be in touch within 24 hours.</p>
+                <form class="quote-form" id="quickQuoteForm" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" id="qName" placeholder="Your Name" required>
+                            <span class="error-message" role="alert"></span>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="qPhone" placeholder="Phone Number" required>
+                            <span class="error-message" role="alert"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="qEmail" placeholder="Email Address" required>
+                        <span class="error-message" role="alert"></span>
+                    </div>
+                    <div class="form-group">
+                        <select id="qService" required>
+                            <option value="">Select a service</option>
+                            <option value="pruning">Tree Pruning</option>
+                            <option value="removal">Tree Removal</option>
+                            <option value="health">Health Assessment</option>
+                            <option value="stump">Stump Grinding</option>
+                            <option value="consultation">Consultation</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <span class="error-message" role="alert"></span>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="qMessage" placeholder="Tell us about your project..." rows="4"></textarea>
+                        <span class="error-message" role="alert"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Request Quote</button>
+                </form>
+                <button class="quote-form-close" id="quoteFormClose" aria-label="Close quote form">×</button>
+            </div>
+            <div class="quote-form-overlay" id="quoteFormOverlay"></div>
+        </section>
+
+        <!-- Introduction Section -->
+        <section class="intro-section" role="region" aria-label="About us">
+            <div class="intro-content">
+                <h2>Trusted Tree Care Experts</h2>
+                <p>At Oceana Tree Services, we believe in the power of professional care to keep your trees healthy, beautiful, and safe. Our certified arborists combine deep horticultural knowledge with modern techniques to deliver results that exceed expectations. Whether you need routine maintenance, emergency removal, or expert consultation, we approach every project with integrity and precision.</p>
+                <div class="intro-grid">
+                    <div class="intro-point">
+                        <span class="point-icon">🌳</span>
+                        <h3>Expert Knowledge</h3>
+                        <p>Certified arborists with years of field experience</p>
+                    </div>
+                    <div class="intro-point">
+                        <span class="point-icon">✓</span>
+                        <h3>Safety First</h3>
+                        <p>Fully insured with strict safety protocols</p>
+                    </div>
+                    <div class="intro-point">
+                        <span class="point-icon">🌱</span>
+                        <h3>Sustainable Practices</h3>
+                        <p>Environmentally responsible methods</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust Metrics Strip -->
+        <section class="metrics-strip" role="region" aria-label="Why clients trust us">
+            <div class="metrics-container">
+                <div class="metric">
+                    <div class="metric-number">500+</div>
+                    <div class="metric-label">Projects Completed</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-number">98%</div>
+                    <div class="metric-label">Client Satisfaction</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-number">25+</div>
+                    <div class="metric-label">Years Combined Experience</div>
+                </div>
+                <div class="metric">
+                    <div class="metric-number">24/7</div>
+                    <div class="metric-label">Emergency Response</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section" id="services" role="region" aria-label="Our services">
+            <div class="section-container">
+                <h2>Our Services</h2>
+                <p class="section-subtitle">Comprehensive tree care solutions for residential and commercial properties</p>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="/images/service-1.jpg" alt="Tree pruning service" loading="lazy">
+                        </div>
+                        <h3>Tree Pruning</h3>
+                        <p>Careful, strategic pruning to enhance tree health, shape, and safety. We maintain structural integrity while improving aesthetics.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="/images/service-2.jpg" alt="Tree removal service" loading="lazy">
+                        </div>
+                        <h3>Tree Removal</h3>
+                        <p>Safe removal of dead, diseased, or unwanted trees. Our skilled team handles complex removals with minimal disruption to your property.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="/images/service-3.jpg" alt="Tree health assessment" loading="lazy">
+                        </div>
+                        <h3>Health Assessment</h3>
+                        <p>Professional evaluation of tree condition, pest and disease identification, and recommendations for optimal long-term health.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="/images/service-4.jpg" alt="Stump grinding service" loading="lazy">
+                        </div>
+                        <h3>Stump Grinding</h3>
+                        <p>Complete stump removal and grinding to reclaim your space. We handle stumps of any size with specialized equipment.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="/images/service-5.jpg" alt="Tree planting and landscaping" loading="lazy">
+                        </div>
+                        <h3>Tree Planting</h3>
+                        <p>Expert species selection and planting services to establish healthy new trees that thrive in your landscape for decades.</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-image">
+                            <img src="/images/service-6.jpg" alt="Emergency tree services" loading="lazy">
+                        </div>
+                        <h3>Emergency Response</h3>
+                        <p>Rapid response for storm damage, fallen trees, and hazardous situations. Available 24/7 for urgent tree emergencies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section class="why-us-section" id="why-us" role="region" aria-label="Why choose us">
+            <div class="section-container">
+                <h2>Why Choose Oceana Tree Services</h2>
+                
+                <div class="why-us-grid">
+                    <div class="why-us-item">
+                        <h3>Certified Professionals</h3>
+                        <p>Our team consists of certified arborists and trained specialists who stay current with industry best practices and techniques.</p>
+                    </div>
+                    <div class="why-us-item">
+                        <h3>Complete Insurance</h3>
+                        <p>Fully insured and bonded for your peace of mind. We carry liability and workers compensation coverage for all projects.</p>
+                    </div>
+                    <div class="why-us-item">
+                        <h3>Transparent Pricing</h3>
+                        <p>Free, detailed quotes with no hidden fees. You'll understand exactly what you're paying for before any work begins.</p>
+                    </div>
+                    <div class="why-us-item">
+                        <h3>Quality Equipment</h3>
+                        <p>State-of-the-art tools and machinery maintained to the highest standards for safe, efficient, and precise work.</p>
+                    </div>
+                    <div class="why-us-item">
+                        <h3>Environmental Care</h3>
+                        <p>We prioritise sustainable practices, proper waste management, and responsible tree care for environmental stewardship.</p>
+                    </div>
+                    <div class="why-us-item">
+                        <h3>Local Expertise</h3>
+                        <p>Deep knowledge of local tree species, climate conditions, and community needs shapes our tailored service approach.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Slider -->
+        <section class="testimonials-section" id="testimonials" role="region" aria-label="Client testimonials">
+            <div class="section-container">
+                <h2>What Our Clients Say</h2>
+                
+                <div class="testimonials-slider">
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">"Oceana Tree Services transformed our backyard. The team was professional, punctual, and left the property immaculate. Highly recommended."</p>
+                            <p class="testimonial-author">Sarah Mitchell</p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">"After a storm damaged several trees, they responded quickly and handled everything with expertise. We felt completely confident in their care."</p>
+                            <p class="testimonial-author">James Chen</p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">"The health assessment gave us invaluable information about our trees. The recommendations were clear and the pricing was fair. Excellent service."</p>
+                            <p class="testimonial-author">Emma Thompson</p>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <p class="testimonial-text">"Professional, courteous, and they cleaned up completely. We're thrilled with the results and will definitely use them again."</p>
+                            <p class="testimonial-author">Michael Rodriguez</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonials-controls">
+                    <button class="testimonial-btn prev" id="prevTestimonial" aria-label="Previous testimonial">←</button>
+                    <div class="testimonial-dots" id="testimonialDots"></div>
+                    <button class="testimonial-btn next" id="nextTestimonial" aria-label="Next testimonial">→</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Work Gallery -->
+        <section class="gallery-section" id="gallery" role="region" aria-label="Recent work gallery">
+            <div class="section-container">
+                <h2>Recent Work</h2>
+                <p class="section-subtitle">A selection of completed projects showcasing our expertise and attention to detail</p>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="/images/gallery-1.jpg" alt="Pruned oak tree" loading="lazy">
+                        <span class="gallery-overlay">View</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="/images/gallery-2.jpg" alt="Tree removal completed" loading="lazy">
+                        <span class="gallery-overlay">View</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="/images/gallery-3.jpg" alt="Newly planted trees" loading="lazy">
+                        <span class="gallery-overlay">View</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="/images/gallery-4.jpg" alt="Stump grinding service" loading="lazy">
+                        <span class="gallery-overlay">View</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="/images/gallery-5.jpg" alt="Storm damage cleanup" loading="lazy">
+                        <span class="gallery-overlay">View</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="/images/gallery-6.jpg" alt="Professional pruning work" loading="lazy">
+                        <span class="gallery-overlay">View</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox Modal -->
+        <div class="lightbox" id="lightbox" role="dialog" aria-label="Image viewer" aria-hidden="true">
+            <button class="lightbox-close" id="lightboxClose" aria-label="Close image viewer">×</button>
+            <div class="lightbox-content">
+                <img id="lightboxImage" src="" alt="">
+            </div>
+            <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous image">←</button>
+            <button class="lightbox-next" id="lightboxNext" aria-label="Next image">→</button>
+        </div>
+
+        <!-- Service Regions Section -->
+        <section class="regions-section" role="region" aria-label="Service areas">
+            <div class="section-container">
+                <h2>Service Areas</h2>
+                <p class="section-subtitle">We proudly serve the following communities and regions. Contact us to confirm service in your area.</p>
+                
+                <div class="regions-grid">
+                    <div class="region-card">
+                        <h3>Inner West</h3>
+                        <p>Including [EDIT: add suburbs], and surrounding areas</p>
+                    </div>
+                    <div class="region-card">
+                        <h3>Eastern Suburbs</h3>
+                        <p>Including [EDIT: add suburbs], and surrounding areas</p>
+                    </div>
+                    <div class="region-card">
+                        <h3>Northern Areas</h3>
+                        <p>Including [EDIT: add suburbs], and surrounding areas</p>
+                    </div>
+                    <div class="region-card">
+                        <h3>Southern Regions</h3>
+                        <p>Including [EDIT: add suburbs], and surrounding areas</p>
+                    </div>
+                </div>
+
+                <div class="regions-contact">
+                    <p>Don't see your area listed? <a href="contact.html">Contact us</a> to discuss whether we can service your location.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section class="final-cta-section" role="region" aria-label="Call to action">
+            <div class="section-container">
+                <h2>Ready to Get Started?</h2>
+                <p>Let us help you maintain beautiful, healthy trees. Request a free quote or call us today.</p>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary" id="finalQuoteBtn">Get Free Quote</button>
+                    <a href="tel:(555) 123-4567" class="btn btn-secondary">Call (555) 123-4567</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Oceana Tree Services</h3>
+                <p>Professional tree care with integrity and expertise. Your trees deserve the best.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p><a href="tel:(555) 123-4567">(555) 123-4567</a></p>
+                <p><a href="mailto:info@oceanatreeservices.com">info@oceanatreeservices.com</a></p>
+                <p>Available 24/7 for emergencies</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Hours</h4>
+                <p>Monday - Friday: 7am - 5pm</p>
+                <p>Saturday: 8am - 4pm</p>
+                <p>Sunday: Emergency only</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Oceana Tree Services. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

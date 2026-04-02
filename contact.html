@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Oceana Tree Services</title>
+    <meta name="description" content="Get in touch with Oceana Tree Services. Request a free quote or ask questions about our tree care services.">
+    <meta name="theme-color" content="#1a1f2e">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Skip to main content link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="header-container">
+            <div class="logo">
+                <span class="logo-text">Oceana Tree Services</span>
+            </div>
+            
+            <nav class="nav" role="navigation" aria-label="Main navigation">
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#testimonials">Testimonials</a></li>
+                    <li><a href="contact.html" class="nav-cta">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-phone">
+                <span class="phone-icon">📞</span>
+                <span class="phone-number">(555) 123-4567</span>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Page Header -->
+        <section class="page-header" role="region" aria-label="Contact page header">
+            <div class="section-container">
+                <h1>Get In Touch</h1>
+                <p>We'd love to hear from you. Contact us with questions, project details, or to request a free quote.</p>
+            </div>
+        </section>
+
+        <!-- Contact Content -->
+        <section class="contact-section" role="region" aria-label="Contact form and information">
+            <div class="section-container">
+                <div class="contact-grid">
+                    <!-- Contact Form -->
+                    <div class="contact-form-wrapper">
+                        <h2>Send Us a Message</h2>
+                        <form class="contact-form" id="contactForm" novalidate>
+                            <div class="form-group">
+                                <label for="contactName">Your Name *</label>
+                                <input 
+                                    type="text" 
+                                    id="contactName" 
+                                    name="name"
+                                    required
+                                    aria-required="true">
+                                <span class="error-message" role="alert"></span>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="contactEmail">Email Address *</label>
+                                    <input 
+                                        type="email" 
+                                        id="contactEmail" 
+                                        name="email"
+                                        required
+                                        aria-required="true">
+                                    <span class="error-message" role="alert"></span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="contactPhone">Phone Number</label>
+                                    <input 
+                                        type="tel" 
+                                        id="contactPhone" 
+                                        name="phone">
+                                    <span class="error-message" role="alert"></span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactSubject">Subject *</label>
+                                <input 
+                                    type="text" 
+                                    id="contactSubject" 
+                                    name="subject"
+                                    required
+                                    aria-required="true">
+                                <span class="error-message" role="alert"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactMessage">Message *</label>
+                                <textarea 
+                                    id="contactMessage" 
+                                    name="message"
+                                    rows="8"
+                                    required
+                                    aria-required="true"></textarea>
+                                <span class="error-message" role="alert"></span>
+                            </div>
+
+                            <div class="form-group checkbox">
+                                <label for="contactOptIn">
+                                    <input 
+                                        type="checkbox" 
+                                        id="contactOptIn" 
+                                        name="optin"
+                                        checked>
+                                    I'd like to receive updates about services and special offers
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                            <p class="form-note">
+                                <!-- IMPORTANT: Replace the form action placeholder below with your Formspree endpoint or another form service -->
+                                This form currently has a placeholder action. To make it functional, either:
+                                <br><strong>Option 1:</strong> Replace <code>id="contactForm"</code> form action with Formspree, Basin, or similar service
+                                <br><strong>Option 2:</strong> Use the JavaScript fetch code in script.js to send to your backend
+                            </p>
+                        </form>
+                    </div>
+
+                    <!-- Contact Details -->
+                    <div class="contact-details-wrapper">
+                        <h2>Contact Information</h2>
+                        
+                        <div class="contact-details">
+                            <div class="detail-item">
+                                <h3>Phone</h3>
+                                <p>
+                                    <a href="tel:(555) 123-4567">(555) 123-4567</a>
+                                </p>
+                                <p class="detail-note">Call us anytime. Available 24/7 for emergencies.</p>
+                            </div>
+
+                            <div class="detail-item">
+                                <h3>Email</h3>
+                                <p>
+                                    <a href="mailto:info@oceanatreeservices.com">info@oceanatreeservices.com</a>
+                                </p>
+                                <p class="detail-note">We respond to emails within 24 hours.</p>
+                            </div>
+
+                            <div class="detail-item">
+                                <h3>Hours of Operation</h3>
+                                <p>
+                                    Monday – Friday: 7:00 am – 5:00 pm<br>
+                                    Saturday: 8:00 am – 4:00 pm<br>
+                                    Sunday: Emergency only
+                                </p>
+                            </div>
+
+                            <div class="detail-item">
+                                <h3>Why Contact Us?</h3>
+                                <ul class="contact-reasons">
+                                    <li>Request a free quote</li>
+                                    <li>Ask about specific tree services</li>
+                                    <li>Discuss emergency situations</li>
+                                    <li>Share your project details</li>
+                                    <li>Ask questions about our expertise</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="contact-cta">
+                            <h3>Prefer to Call?</h3>
+                            <a href="tel:(555) 123-4567" class="btn btn-secondary">Call Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section" role="region" aria-label="Frequently asked questions">
+            <div class="section-container">
+                <h2>Frequently Asked Questions</h2>
+
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>How quickly can you respond to emergencies?</h3>
+                        <p>We operate 24/7 emergency response and can typically be on-site within 2–4 hours for urgent situations. Call us immediately at (555) 123-4567 for emergencies.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Do you provide free quotes?</h3>
+                        <p>Yes. We provide detailed, free quotes for all projects. Quotes are provided after a site assessment and include a clear breakdown of costs with no hidden fees.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Are you fully insured?</h3>
+                        <p>Yes. We carry comprehensive liability insurance and workers compensation coverage for all projects. Insurance information is provided with every quote.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>What areas do you service?</h3>
+                        <p>We serve multiple regions across the greater area. Please contact us to confirm service availability in your specific location.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>Can you handle large or complex removals?</h3>
+                        <p>Absolutely. Our team is equipped and trained to handle removals of any size or complexity, including trees near structures, power lines, and challenging terrain.</p>
+                    </div>
+
+                    <div class="faq-item">
+                        <h3>What makes your team different?</h3>
+                        <p>We combine certified expertise, modern equipment, transparent pricing, insurance coverage, and a commitment to environmental stewardship. Your property and trees receive professional care from specialists.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="contact-cta-section" role="region" aria-label="Call to action">
+            <div class="section-container">
+                <h2>Ready to Get Your Free Quote?</h2>
+                <p>Contact us today or fill out the form above. We'll be in touch within 24 hours.</p>
+                <div class="cta-buttons">
+                    <a href="tel:(555) 123-4567" class="btn btn-primary">Call (555) 123-4567</a>
+                    <a href="#main-content" class="btn btn-secondary">Scroll to Form</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Oceana Tree Services</h3>
+                <p>Professional tree care with integrity and expertise. Your trees deserve the best.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#gallery">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p><a href="tel:(555) 123-4567">(555) 123-4567</a></p>
+                <p><a href="mailto:info@oceanatreeservices.com">info@oceanatreeservices.com</a></p>
+                <p>Available 24/7 for emergencies</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Hours</h4>
+                <p>Monday - Friday: 7am - 5pm</p>
+                <p>Saturday: 8am - 4pm</p>
+                <p>Sunday: Emergency only</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 Oceana Tree Services. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
